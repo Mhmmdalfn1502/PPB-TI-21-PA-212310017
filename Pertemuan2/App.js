@@ -1,19 +1,12 @@
-import React, { Component } from "react";
-import { SafeAreaView, StyleSheet, Text, View } from "react-native";
-import Motorcycle from "./src/components/Motorcycle";
-import Car from "./src/components/Car";
-import Bicycle from "./src/components/Bicycle";
-import Forms from "./src/components/Forms";
+import React from "react";
+import No1 from "./component/No1";
+import No2 from "./component/No2";
+import No3 from "./component/No3";
+import No4RFC from "./component/No4RFC";
+import No4RCC from "./component/No4RCC";
 
-export default function App() {
-  // return (
-  //   <SafeAreaView>
-  //     <Car />
-  //   </SafeAreaView>
-  // );
+const App = () => {
+  return <No1 />;
+};
 
-  // return <Motorcycle />;
-  // return <Car />;
-  return <Forms />;
-  // return <Bicycle />;
-}
+export default App;
