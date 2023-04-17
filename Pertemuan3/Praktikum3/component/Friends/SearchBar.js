@@ -15,17 +15,18 @@ export default SearchBar;
 
 const styles = StyleSheet.create({
   search_box: {
+    width: "97%",
     padding: 10,
     flexDirection: "row",
     borderWidth: 1,
     borderColor: "grey",
-    borderRadius: 10,
+    borderRadius: 30,
     backgroundColor: "#f0f0f0",
   },
   search_input: {
     fontSize: 18,
     width: "90%",
-    color: "white",
+    color: "black",
     marginLeft: 10,
   },
 });

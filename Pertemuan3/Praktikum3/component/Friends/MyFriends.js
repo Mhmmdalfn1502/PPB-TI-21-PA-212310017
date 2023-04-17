@@ -1,34 +1,31 @@
-import { SafeAreaView, View, StyleSheet } from "react-native";
-import React, { Component } from "react";
-import { StatusBar } from "expo-status-bar";
+import React from "react";
+import { SafeAreaView, StatusBar, StyleSheet, View } from "react-native";
+import SearchBar from "./SearchBar";
+import ExpScrollView from "./ExpScrollView";
 
-export class MyFriends extends Component {
-  render() {
-    return (
-      <SafeAreaView style={styles.container}>
-        <StatusBar hidden={false} style="light" />
-        <View style={styles.header}></View>
-        <View style={styles.body}></View>
-      </SafeAreaView>
-    );
-  }
-}
+const MyFriends = () => {
+  return (
+    <SafeAreaView style={{ flex: 1 }}>
+      <StatusBar hidden={false} style="light" />
+      <View style={styles.header}>
+        <SearchBar />
+      </View>
+      <View style={styles.body}>{/* <ExpScrollView Users={Users} /> */}</View>
+    </SafeAreaView>
+  );
+};
 
-export default MyFriends;
-
-const styles = StyleSheetList.create({
-  container: {
-    flex: 1,
-    backgroundColor: "white",
-  },
+const styles = StyleSheet.create({
   header: {
     flex: 1,
+    backgroundColor: "red",
     justifyContent: "center",
-    paddingHorizontal: 10,
-    backgroundColor: "orange",
+    alignItems: "center",
   },
   body: {
     flex: 10,
-    backgroundColor: "green",
+    backgroundColor: "yellow",
   },
 });
+
+export default MyFriends;

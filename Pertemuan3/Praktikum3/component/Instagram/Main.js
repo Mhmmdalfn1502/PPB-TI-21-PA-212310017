@@ -1,6 +1,6 @@
 import React from "react";
 import { SafeAreaView, ScrollView, StatusBar, StyleSheet, View } from "react-native";
-import { Users } from "./Users";
+import { Users } from "../assets/Users";
 import Header from "./Header";
 import Story from "./Story";
 import Feed from "./Feed";
@@ -36,7 +36,6 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     borderTopWidth: 1,
     borderColor: "EAEAEA",
-    opacity: 50,
   },
 });
 
