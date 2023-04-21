@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, StyleSheet, ScrollView, FlatList} from 'react-native';
 import { SectionList } from 'react-native-web';
 
-const FlatListNo5 = () => {
+const SectionListNo5 = () => {
     const Users = [
         {id: 1, name:'Alfan', fullname:'Muhammad Alfan', gender:'M'},
         {id: 2, name:'Nandes', fullname:'Nagasa Anandes', gender:'M'},
@@ -35,4 +35,4 @@ const AmbilData = ({ data }) => {
     )
 }
 
-export default FlatListNo5;
+export default SectionListNo5;
