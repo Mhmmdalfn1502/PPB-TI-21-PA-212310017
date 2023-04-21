@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, Image, View, StyleSheet, ScrollView } from "react-native";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
-import { Users } from "../assets/Users";
+import { Users } from "../../../const-data/Users";
 
 const Feed = () => {
   return (

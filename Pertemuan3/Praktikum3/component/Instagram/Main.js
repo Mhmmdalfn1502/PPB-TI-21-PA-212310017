@@ -1,9 +1,9 @@
 import React from "react";
 import { SafeAreaView, ScrollView, StatusBar, StyleSheet, View } from "react-native";
-import { Users } from "../assets/Users";
 import Header from "./Header";
 import Story from "./Story";
 import Feed from "./Feed";
+import { Users } from "../../../const-data/Users";
 
 const Main = () => {
   return (
