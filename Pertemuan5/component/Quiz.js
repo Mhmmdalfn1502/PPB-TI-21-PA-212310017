@@ -10,7 +10,7 @@ const Quiz = () => {
     if(value) {
       setValidTitle = (value)
     } else {
-      setValidTitle = "Isi goblok"
+      setValidTitle = "Silahkan isi"
     };
     }
   return (
