@@ -102,13 +102,12 @@ const SignInBasic = () => {
           <Text style={styles.btn_signin_text}>Sign In</Text>
         </TouchableOpacity>
         <Modal visible={isModalVisible} transparent={true}>
-          <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <View style={{backgroundColor: 'white', padding: 20, borderRadius:20, shadowColor:"black", shadowOffset: {width: 0,
-      height: 2,}, shadowOpacity: 0.25, alignItems:"center"}}>
-            <Text style={{marginBottom:10}}>Email/Password is not match</Text>
-            <View style={{width:50, height:50}}>
-            <Button title="Ok" onPress={handleCloseModal} color="purple" />
-            </View>
+          <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+            <View style={{ backgroundColor: "white", padding: 20, borderRadius: 20, shadowColor: "black", shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.25, alignItems: "center" }}>
+              <Text style={{ marginBottom: 10 }}>Email/Password is not match</Text>
+              <View style={{ width: 50, height: 50 }}>
+                <Button title="Ok" onPress={handleCloseModal} color="purple" />
+              </View>
             </View>
           </View>
         </Modal>
@@ -158,5 +157,4 @@ const styles = StyleSheet.create({
     marginTop: 15,
   },
   btn_signin_text: { color: "white", textAlign: "center", fontSize: 16 },
-
 });
